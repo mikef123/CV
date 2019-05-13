@@ -1,3 +1,9 @@
+/* gris oscuro = #1d252c:
+gris claro = #626262;
+background gris = #1b2127; 
+celeste =  #026fff;
+*/
+
 body {
     font-family: 'Source Sand Pro', sans-serif;
 }
@@ -17,10 +23,49 @@ h1 {
     font-size: 40px;
     line-height: 1.5;
     letter-spacing: -.2px;
+    color: white;
+    margin: 100px 150px 70px 30px;
     /*text-transform: uppercase;
     text-decoration: dashed*/
 }
 
+h1 strong {
+    color: #026fff;
+}
+
+.hero {
+    height: 300px;
+    background-image: url('../images/space.jpg');
+    background-size: 500px 300px;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-color: #1b2127;
+}
+
+.project {
+    /*border-top: 10px solid red;*/
+    /* border-color: red;
+    border-width: 15px;
+    border-style: groove;*/
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
 .project-datails {
     width: 500px;
+}
+
+.project-imageContainer {
+    width: 500px;
+}
+
+.header {
+    background-color: #1b2127;
+    color: white;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
 }
