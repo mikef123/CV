@@ -6,6 +6,7 @@ celeste =  #026fff;
 
 body {
     font-family: 'Source Sand Pro', sans-serif;
+    margin: 0px;
 }
 
 h1,
@@ -42,6 +43,10 @@ h1 strong {
     background-color: #1b2127;
 }
 
+.portfolio {
+    background: #fafafa;
+}
+
 .project {
     /*border-top: 10px solid red;*/
     /* border-color: red;
@@ -49,7 +54,10 @@ h1 strong {
     border-style: groove;*/
     border: 1px solid gray;
     border-radius: 10px;
+    margin: 10px;
     margin-bottom: 15px;
+    padding: 20px;
+    background: white;
 }
 
 .project-datails {
@@ -68,4 +76,18 @@ h1 strong {
 .header a {
     color: white;
     text-decoration: none;
+}
+
+.flexbox {
+    display: flex;
+    flex-wrap: nowrap;
+    /* flex-direction: column */
+}
+
+.box {
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    border: 1px solid red;
+    flex-shrink: 0;
 }
