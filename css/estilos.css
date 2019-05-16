@@ -25,7 +25,7 @@ h1 {
     line-height: 1.5;
     letter-spacing: -.2px;
     color: white;
-    margin:0;
+    margin: 0;
     /* margin: 100px 150px 70px 30px; */
     /*text-transform: uppercase;
     text-decoration: dashed*/
@@ -46,13 +46,18 @@ h2 {
 
 .hero {
     height: 300px;
-    background-image: url('../images/space.jpg');
-    background-size: 500px 300px;
-    background-repeat: no-repeat;
+    /* background-image: url('../images/space.jpg'); */
+    /* background-size: 500px 300px; */
+    /* background-repeat: no-repeat; */
     background-position-x: right;
     background-color: #1b2127;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+.hero-image {
+    object-fit: cover;
 }
 
 .portfolio {
@@ -74,6 +79,9 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    -webkit-box-shadow: 7px 9px 3px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 7px 9px 3px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: 7px 9px 3px -1px rgba(0, 0, 0, 0.75);
 }
 
 .project-course,
@@ -115,7 +123,7 @@ h2 {
 
 .header a {
     color: white;
-    text-decoration: none; 
+    text-decoration: none;
     height: inherit;
     display: flex;
     align-items: center;
@@ -125,6 +133,7 @@ h2 {
 .menu {
     height: inherit;
 }
+
 .header ol {
     display: flex;
     height: inherit;
@@ -135,15 +144,16 @@ h2 {
 }
 
 ol,
-ul{
-    margin:0;
+ul {
+    margin: 0;
     padding: 0;
     list-style: none;
 }
 
-figure{
+figure {
     margin: 0;
 }
+
 .flexbox {
     display: flex;
     flex-wrap: nowrap;
@@ -189,6 +199,9 @@ figure{
     overflow: hidden;
     flex-shrink: 0;
     background: #f4fbff;
+    -webkit-box-shadow: 7px 9px 3px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 7px 9px 3px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: 7px 9px 3px -1px rgba(0, 0, 0, 0.75);
 }
 
 .event-image {
@@ -206,7 +219,7 @@ figure{
 }
 
 .event-description {
-text-align: left;
+    text-align: left;
 }
 
 .event-url {
@@ -221,14 +234,12 @@ text-align: left;
     background-color: #056fff;
     color: white;
     height: 150px;
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.social {
-    
-}
+.social {}
 
 .social-link {
     width: 50px;
@@ -246,7 +257,7 @@ text-align: left;
     background-image: url('../images/linkedin.png');
 }
 
-.form-email input{
+.form-email input {
     border-color: gray;
     padding: 10px 20px 10px 25px;
     background-image: url('../images/envelope.svg');
@@ -268,9 +279,18 @@ text-align: left;
     margin-top: 10px;
     width: 100px;
     padding: 10px 0;
-
 }
 
 .form-email h3 {
     font-family: 'Source Sand Pro', sans-serif;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
 }
