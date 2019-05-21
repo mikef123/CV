@@ -21,7 +21,7 @@
 </head>
 
 <body>
-    <i class="icon-menu burger-button"></i>
+    <i class="icon-menu burger-button" id="burger-menu"></i>
     <header class="header">
         <div class="container">
             <figure class="logo">
@@ -45,9 +45,11 @@
     <section class="hero">
         <div class="container">
             <h1>
-                Hola! Soy <strong>Miguel Urquijo</strong> <br /> desarrollador <strong>.Net</strong> <br /> con pasión por el desarrollo <strong>Full Stack.</strong>
+                Hola! Soy <strong>Miguel Urquijo</strong> <br /> desarrollador <strong>.Net</strong> <br /> con pasión
+                por el desarrollo <strong>Full Stack.</strong>
             </h1>
-            <img class="hero-image" src="images/space.jpg" alt="El espacio es nuestro límite" height="300px" width="500px">
+            <img class="hero-image" src="images/space.jpg" alt="El espacio es nuestro límite" height="300px"
+                width="500px">
         </div>
     </section>
     <section id="portafolio" class="portfolio">
@@ -60,7 +62,8 @@
                     <h6 class="project-course">Platzigram</h6>
                     <p class="project-date"><small><strong>Fecha:</strong> 01/06/2016</small></p>
                     <p class="project-url"><small><strong>Puedes verlo en:</strong> mikef123 git hub</small></p>
-                    <p class="project-description">Fue el resultado de realizar el curso de fundamentos Android studio con platzi
+                    <p class="project-description">Fue el resultado de realizar el curso de fundamentos Android studio
+                        con platzi
                     </p>
                 </div>
                 <figure class="project-imageContainer">
@@ -73,7 +76,8 @@
                     <h6 class="project-course">Platzigram</h6>
                     <p class="project-date"><small><strong>Fecha:</strong> 01/06/2016</small></p>
                     <p class="project-url"><small><strong>Puedes verlo en:</strong> mikef123 git hub</small></p>
-                    <p class="project-description">Fue el resultado de realizar el curso de fundamentos Android studio con platzi
+                    <p class="project-description">Fue el resultado de realizar el curso de fundamentos Android studio
+                        con platzi
                     </p>
                 </div>
                 <figure class="project-imageContainer">
@@ -81,7 +85,7 @@
                 </figure>
             </article>
     </section>
-    </div>
+    <video src=""></video>
     <div id="experiencia" class="container">
         <h2 class="event-list-title">Más sobre mi experiencia.</h2>
     </div>
@@ -158,7 +162,31 @@
             </div>
         </div>
     </footer>
+    <script>
+        console.log(window.matchMedia('screen and (max-width: 767px'));
+        const ipad = window.matchMedia('screen and (max-width: 767px');
+        const menu = document.querySelector('.menu');
+        // console.log(menu);
+        const burgerButton = document.querySelector('#burger-menu');
+        // console.log(burgerButton);
 
+        ipad.addEventListener(validation);
+
+        function showhide() {
+            if (menu.classList.contains('is-active')) {
+                menu.classList.remove('is-active');
+            }
+            else {
+                menu.classList.add('is-active');
+            }
+        }
+        function validation(event) {
+            if (event.matches) {
+                burgerButton.addEventListener('click', showhide);
+            }
+        }
+
+    </script>
 </body>
 
 </html>
