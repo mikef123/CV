@@ -45,11 +45,9 @@
     <section class="hero">
         <div class="container">
             <h1>
-                Hola! Soy <strong>Miguel Urquijo</strong> <br /> desarrollador <strong>.Net</strong> <br /> con pasión
-                por el desarrollo <strong>Full Stack.</strong>
+                Hola! Soy <strong>Miguel Urquijo</strong> <br /> desarrollador <strong>.Net</strong> <br /> con pasión por el desarrollo <strong>Full Stack.</strong>
             </h1>
-            <img class="hero-image" src="images/space.jpg" alt="El espacio es nuestro límite" height="300px"
-                width="500px">
+            <img class="hero-image" src="images/space.jpg" alt="El espacio es nuestro límite" height="300px" width="500px">
         </div>
     </section>
     <section id="portafolio" class="portfolio">
@@ -62,8 +60,7 @@
                     <h6 class="project-course">Platzigram</h6>
                     <p class="project-date"><small><strong>Fecha:</strong> 01/06/2016</small></p>
                     <p class="project-url"><small><strong>Puedes verlo en:</strong> mikef123 git hub</small></p>
-                    <p class="project-description">Fue el resultado de realizar el curso de fundamentos Android studio
-                        con platzi
+                    <p class="project-description">Fue el resultado de realizar el curso de fundamentos Android studio con platzi
                     </p>
                 </div>
                 <figure class="project-imageContainer">
@@ -76,8 +73,7 @@
                     <h6 class="project-course">Platzigram</h6>
                     <p class="project-date"><small><strong>Fecha:</strong> 01/06/2016</small></p>
                     <p class="project-url"><small><strong>Puedes verlo en:</strong> mikef123 git hub</small></p>
-                    <p class="project-description">Fue el resultado de realizar el curso de fundamentos Android studio
-                        con platzi
+                    <p class="project-description">Fue el resultado de realizar el curso de fundamentos Android studio con platzi
                     </p>
                 </div>
                 <figure class="project-imageContainer">
@@ -170,23 +166,28 @@
         const burgerButton = document.querySelector('#burger-menu');
         // console.log(burgerButton);
 
-        ipad.addEventListener(validation);
+        if (ipad.matches) {
+            burgerButton.addEventListener('click', showhide);
+        }
+        ipad.addListener(validation);
+
+
+        function validation(event) {
+            if (event.matches) {
+                burgerButton.addEventListener('click', showhide);
+            } else {
+                burgerButton.removeEventListener('click', showhide);
+            }
+        }
 
         function showhide() {
             if (menu.classList.contains('is-active')) {
                 menu.classList.remove('is-active');
-            }
-            else {
+            } else {
                 menu.classList.add('is-active');
             }
         }
-        function validation(event) {
-            if (event.matches) {
-                burgerButton.addEventListener('click', showhide);
-            }
-        }
-
     </script>
 </body>
 
-</html>
+</html>y

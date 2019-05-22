@@ -330,7 +330,7 @@ figure {
     justify-content: inherit;
     align-items: inherit;
     height: inherit;
-    
+    flex-wrap: wrap;
 }
 
 .burger-button {
