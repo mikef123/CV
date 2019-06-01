@@ -143,7 +143,11 @@ h2 {
 }
 
 .project-imageContainer img {
-    max-width: 100%
+    max-width: 100%;
+}
+
+.project-image {
+    width: 100%;
 }
 
 .header {
