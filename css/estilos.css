@@ -326,6 +326,10 @@ figure {
     font-family: 'Source Sand Pro', sans-serif;
 }
 
+.form-email a {
+    color: white;
+}
+
 .container {
     max-width: 1000px;
     /* width: 100%; */
